@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from "react";
+import { useMemo, useRef } from "react";
 import { fragmentShader } from "./fragmentShader";
 import { vertexShader } from "./vertexShader";
 import { useFrame } from "@react-three/fiber";
@@ -34,8 +34,9 @@ const Plane = () => {
     widthSegments: { value: 32, min: 0, max: 64, step: 8 },
     heightSegements: { value: 32, min: 0, max: 64, step: 8 },
     wireframe: false,
-    doubleSide: false,
+    doubleSide: true,
   });
+  console.log(color);
 
   useFrame(({ clock }) => {
     (mesh.current?.material as ShaderMaterial).uniforms.uTime.value =
