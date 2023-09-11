@@ -11,7 +11,7 @@ function App() {
   });
   return (
     <>
-      <Canvas camera={{ position: [0, 0, 1] }} shadows>
+      <Canvas camera={{ position: [0, 0, 30] }} shadows>
         {/* <color attach="background" args={["#f0f0f0"]} /> */}
         {/* <Plane /> */}
         {/* <MagicBox /> */}

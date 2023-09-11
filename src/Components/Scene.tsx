@@ -1,14 +1,15 @@
 // import Firework from "./Firework/Firework";
 // import StarEffect from "./StarEffect/StarEffect";
 
-import Plane from "./Plane/Plane";
+import KineticTypo from "./KineticTypo/KineticTypo";
 
 const Scene = () => {
   return (
     <>
-      <Plane />
+      {/* <Plane /> */}
       {/* <Firework /> */}
       {/* <StarEffect /> */}
+      <KineticTypo />
     </>
   );
 };
