@@ -1,4 +1,3 @@
-import "./App.css";
 import { Canvas } from "@react-three/fiber";
 import { Loader, OrbitControls } from "@react-three/drei";
 import { Leva, useControls } from "leva";

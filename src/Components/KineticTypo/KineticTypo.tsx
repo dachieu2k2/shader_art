@@ -1,19 +1,8 @@
 import { useMemo, useRef } from "react";
 import { fragmentShader } from "./fragmentShader";
 import { vertexShader } from "./vertexShader";
-import {
-  createPortal,
-  useFrame,
-  useLoader,
-  useThree,
-} from "@react-three/fiber";
-import {
-  DoubleSide,
-  Mesh,
-  ShaderMaterial,
-  Vector2,
-  TextureLoader,
-} from "three";
+import { useFrame, useLoader, useThree } from "@react-three/fiber";
+import { Mesh, ShaderMaterial, Vector2, TextureLoader } from "three";
 
 const KineticTypo = () => {
   const mesh = useRef<Mesh>(null);
@@ -52,11 +41,7 @@ const KineticTypo = () => {
   });
 
   return (
-    <mesh
-      ref={mesh}
-      // position={[0, 0, 0]}
-    >
-      {/* <torusKotGeometry /> */}
+    <mesh ref={mesh} position={[0, 0, -30]}>
       <torusKnotGeometry args={[12, 3, 768, 3, 4, 3]} />
       <shaderMaterial
         uniforms={uniforms}
